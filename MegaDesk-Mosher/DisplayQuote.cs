@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,10 +14,28 @@ namespace MegaDesk_Mosher
 {
     public partial class DisplayQuoteInfo : Form
     {
+        // Create an empty desk object.  Will populate it when the form loads in the DisplayQuoteInfo() section
+        private Desk userDesk = new Desk();
+
+        // Create some variables to hold the incoming info
+        private string quoteFirstName;
+        private string quoteLastName;
+        private double quoteWidth;
+        private double quoteDepth;
+        private int quoteDrawers;
+        private string quoteMaterial;
+        private int quoteRushInfo;
+
 
         public DisplayQuoteInfo(string name, double width, double depth, int drawers, string material, int rushOrderInfo)
         {
             InitializeComponent();
+
+            quoteWidth = width;
+            quoteDepth = depth;
+            quoteDrawers = drawers;
+            quoteMaterial = material;
+            quoteRushInfo = rushOrderInfo;
 
             // Set the values on the form with the desk size/material info
 
@@ -27,7 +47,11 @@ namespace MegaDesk_Mosher
             RushValue.Text = rushOrderInfo.ToString();
 
             // Create an desk object so we can use it
-            Desk userDesk = new Desk(width, depth, drawers, material, rushOrderInfo);
+            userDesk.deskWidth = width;
+            userDesk.deskDepth = depth;
+            userDesk.numDrawers = drawers;
+            userDesk.surfaceMaterial = material;
+            userDesk.rushOption = rushOrderInfo;
 
             // Display pricing
             BasePriceValue.Text = $"${Desk.BASEPRICE.ToString()}";
@@ -64,6 +88,28 @@ namespace MegaDesk_Mosher
         private void DisplayQuote_Load(object sender, EventArgs e)
         {
             
+        }
+
+        // Button for saving the quote to a JSON file
+        private void SaveQuoteButton_Click(object sender, EventArgs e)
+        {
+            DateTime currentDate = DateTime.Now;
+
+            // Create a quote object
+            // TODO: Change my name into the variables.  Hardcoded for testing
+            DeskQuote quoteInfo = new DeskQuote("Scott", "Mosher", currentDate.ToString("MM/dd/yyyy H:mm tt"), userDesk.getTotalCost(), userDesk);
+
+            // Now sent it off to be converted
+            quoteInfo.convertToJson();
+
+            MessageBox.Show("Quote Saved");
+
+            // TODO:  Where should the tool go once a quote is saved?
+            MainMenu mainMenuForm = new MainMenu();
+
+            mainMenuForm.Show();
+
+            Close();
         }
     }
 }
