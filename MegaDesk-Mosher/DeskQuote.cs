@@ -20,6 +20,9 @@ namespace MegaDesk_Mosher
         // Create an empty desk object to be used
         public Desk userDesk;
 
+        public DeskQuote() {
+}
+
         public DeskQuote(string quoteFirstName, string quoteLastName, string quoteDate, double deskQuoteTotal, Desk quoteDesk)
         {
             clientFirstName = quoteFirstName;
