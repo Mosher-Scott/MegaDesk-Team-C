@@ -106,9 +106,14 @@ namespace MegaDesk_Mosher
             return cost;
         }
 
+        //Access DeskQuote to obtain rushOrder
+        DeskQuote newQuote = new DeskQuote();
+        
         // Gets the rush order options based on desk size
         public double getRushOrderPrice()
         {
+            int[,] rushOrderGrid = newQuote.GetRushOrder();
+            
             double price = 0;
             double surfaceArea = getDeskSurfaceArea();
 
@@ -116,13 +121,14 @@ namespace MegaDesk_Mosher
             {
                 if (this.rushOption == 3)
                 {
-                    price = 60;
+                    price = rushOrderGrid[0, 0];
+
                 } else if (this.rushOption == 5)
                 {
-                    price = 40;
+                    price = rushOrderGrid[1, 0];
                 } else if (this.rushOption == 7)
                 {
-                    price = 30;
+                    price = rushOrderGrid[2, 0];
                 }
             }
 
@@ -130,15 +136,15 @@ namespace MegaDesk_Mosher
             {
                 if (this.rushOption == 3)
                 {
-                    price = 70;
+                    price = rushOrderGrid[1, 0];
                 }
                 else if (this.rushOption == 5)
                 {
-                    price = 50;
+                    price = rushOrderGrid[1, 1];
                 }
                 else if (this.rushOption == 7)
                 {
-                    price = 35;
+                    price = rushOrderGrid[1, 2];
                 }
             }
 
@@ -146,15 +152,15 @@ namespace MegaDesk_Mosher
             {
                 if (this.rushOption == 3)
                 {
-                    price = 80;
+                    price = rushOrderGrid[2, 0];
                 }
                 else if (this.rushOption == 5)
                 {
-                    price = 60;
+                    price = rushOrderGrid[2, 1];
                 }
                 else if (this.rushOption == 7)
                 {
-                    price = 40;
+                    price = rushOrderGrid[2, 2];
                 }
             }
 
