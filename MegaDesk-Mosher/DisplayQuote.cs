@@ -95,7 +95,7 @@ namespace MegaDesk_Mosher
         {
             DateTime currentDate = DateTime.Now;
 
-            // Create a quote object Hi
+            // Create a quote object
             // TODO: Change my name into the variables.  Hardcoded for testing
             DeskQuote quoteInfo = new DeskQuote("Scott", "Mosher", currentDate.ToString("MM/dd/yyyy H:mm tt"), userDesk.getTotalCost(), userDesk);
 
