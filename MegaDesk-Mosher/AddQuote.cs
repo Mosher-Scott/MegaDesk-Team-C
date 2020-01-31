@@ -23,6 +23,7 @@ namespace MegaDesk_Mosher
         private void AddQuote_Load(object sender, EventArgs e)
         {
 
+        
         }
 
         private void AddNewQuoteButton_Click(object sender, EventArgs e)
@@ -133,10 +134,12 @@ namespace MegaDesk_Mosher
             string material = SurfaceMaterialInputBox.Text;
             int rushOrderOption = int.Parse(RushOrderInputBox.Text);
 
-            Desk myDesk = new Desk(width, depth, drawers, material, rushOrderOption);
+            // Scott - I don't think we need to create a Desk object here.  With the way I've currently written the code, I create a desk object on the DisplayQuotes form
+            // Desk myDesk = new Desk(width, depth, drawers, material, rushOrderOption);
 
             DisplayQuoteInfo viewDisplayQuoteForm = new DisplayQuoteInfo(clientName, width, depth, drawers, material, rushOrderOption);
 
+            // Now go back to the View Quote form
             viewDisplayQuoteForm.Tag = this;
             viewDisplayQuoteForm.Show(this);
 

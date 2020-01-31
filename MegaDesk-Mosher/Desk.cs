@@ -1,8 +1,10 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace MegaDesk_Mosher
 {
@@ -18,11 +20,16 @@ namespace MegaDesk_Mosher
 
         public const int BASEPRICE = 200;
 
-        public double deskWidth;
-        public double deskDepth;
-        public int numDrawers;
-        public string surfaceMaterial;
-        public int rushOption;
+        public double deskWidth { get; set; }
+        public double deskDepth { get; set; }
+        public int numDrawers { get; set; }
+        public string surfaceMaterial { get; set; }
+        public int rushOption { get; set; }
+
+        public Desk()
+        {
+
+        }
 
         public Desk(double userWidth, double userDepth, int userDrawers, string userMaterial, int userRushOption)
         {
@@ -164,5 +171,8 @@ namespace MegaDesk_Mosher
         {
             return Desk.BASEPRICE + this.getSurfaceAreaCost() + this.getDrawerCost() + this.getSurfaceMaterialCost() + this.getRushOrderPrice();
         }
+
+       
+
     }
 }

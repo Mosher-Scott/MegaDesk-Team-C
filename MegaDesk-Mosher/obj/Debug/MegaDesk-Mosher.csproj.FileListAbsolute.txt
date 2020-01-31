@@ -1,0 +1,40 @@
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.csprojAssemblyReference.cache
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.AddQuote.resources
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.MainMenu.resources
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.Properties.Resources.resources
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.csproj.GenerateResource.cache
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\bin\Debug\MegaDesk-Mosher.exe.config
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\bin\Debug\MegaDesk-Mosher.exe
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\bin\Debug\MegaDesk-Mosher.pdb
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.exe
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.pdb
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.SearchQuotes.resources
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.ViewAllQuotes.resources
+H:\Programming\CIT 365\MegaDesk-Mosher\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.DisplayQuoteInfo.resources
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\bin\Debug\MegaDesk-Mosher.exe.config
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\bin\Debug\MegaDesk-Mosher.exe
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\bin\Debug\MegaDesk-Mosher.pdb
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.csprojAssemblyReference.cache
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.AddQuote.resources
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.DisplayQuoteInfo.resources
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.MainMenu.resources
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.Properties.Resources.resources
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.SearchQuotes.resources
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.ViewAllQuotes.resources
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.csproj.GenerateResource.cache
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.csproj.CoreCompileInputs.cache
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.exe
+C:\Users\smosher\Downloads\MegaDesk-Mosher-master\MegaDesk-Mosher-master\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.pdb
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\bin\Debug\MegaDesk-Mosher.exe.config
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\bin\Debug\MegaDesk-Mosher.exe
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\bin\Debug\MegaDesk-Mosher.pdb
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.csprojAssemblyReference.cache
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.AddQuote.resources
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.DisplayQuoteInfo.resources
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.MainMenu.resources
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.Properties.Resources.resources
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.SearchQuotes.resources
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\obj\Debug\MegaDesk_Mosher.ViewAllQuotes.resources
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.csproj.GenerateResource.cache
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.exe
+C:\Users\owner\Desktop\github\classes\cit365\MegaDesk-Team-C\MegaDesk-Mosher\obj\Debug\MegaDesk-Mosher.pdb
