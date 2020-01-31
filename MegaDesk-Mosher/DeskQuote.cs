@@ -4,17 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace MegaDesk_Mosher
 {
     class DeskQuote
     {
         //Get Rush Order
+        //TODO: figure out file
         public int[,] GetRushOrder()
         {
             try
             {
-            string[] orderPrices = File.ReadAllLines("..\\MegaDesk-Mosher\\Properties\\rushOrderPrices.txt");
+            string path = @"c:..\..\rushOrderPrices.txt";
+            string[] orderPrices = File.ReadAllLines(path);
             int[,] rushOrderGrid = new int[3, 3];
 
             //outer loop for rows, inner for columns
