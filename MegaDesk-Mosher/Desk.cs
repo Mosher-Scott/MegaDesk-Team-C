@@ -118,6 +118,7 @@ namespace MegaDesk_Mosher
         private static Desk quoteDesk;
 
         // Gets the rush order options based on desk size
+        //TODO: rushOrderGrid is not matching up. Need to double check I'm grabbing correct values
         public double getRushOrderPrice()
         {
             int[,] rushOrderGrid = newQuote.GetRushOrder();
