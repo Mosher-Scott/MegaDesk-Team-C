@@ -107,9 +107,18 @@ namespace MegaDesk_Mosher
         }
 
         //Access DeskQuote to obtain rushOrder
-        DeskQuote newQuote = new DeskQuote();
+        DeskQuote newQuote = new DeskQuote(quoteFirstName, quoteLastName, quoteDate, deskQuoteTotal, quoteDesk);
+        //TODO: Figure out how to not include these but grab method from DeskQuote. Maybe
+        // move getRushOrderPrice() to DeskQuote?
         
+        private static string quoteFirstName;
+        private static string quoteLastName;
+        private static string quoteDate;
+        private static double deskQuoteTotal;
+        private static Desk quoteDesk;
+
         // Gets the rush order options based on desk size
+        //TODO: rushOrderGrid is not matching up. Need to double check I'm grabbing correct values
         public double getRushOrderPrice()
         {
             int[,] rushOrderGrid = newQuote.GetRushOrder();
