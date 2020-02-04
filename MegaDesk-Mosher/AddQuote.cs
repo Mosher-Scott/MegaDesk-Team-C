@@ -120,18 +120,42 @@ namespace MegaDesk_Mosher
             ToolTip rushOrderMessage = new ToolTip();
             rushOrderMessage.ShowAlways = true;
             rushOrderMessage.IsBalloon = true;
-            rushOrderMessage.SetToolTip(RushOrderInputBox, "3, 5, 7, or 14 Days (Normal Production)");
+            //rushOrderMessage.SetToolTip(RushOrderInputBox, "3, 5, 7, or 14 Days (Normal Production)");
         }
 
         private void GenerateQuote(object sender, EventArgs e)
         {
+            int rushOrderOption;
+
+            //set Rush Day to Value
+            if (RushRadioNone.Checked)
+            {
+                rushOrderOption = 0;
+            }
+            else if (RushRadioThree.Checked)
+            {
+                rushOrderOption = 3;
+            }
+            else if (RushRadioFive.Checked)
+            {
+                rushOrderOption = 5;
+            }
+            else if (RushRadioSeven.Checked)
+            {
+                rushOrderOption = 7;
+            }
+            else
+            {
+                rushOrderOption = 0;
+            }
+
             //  TODO: Validate all fields before sending the data so someone can't submit empty/invalid data
             string clientName = CustomerNameInputBox.Text;
             double width = double.Parse(DeskWidthInputBox.Text);
             double depth = double.Parse(DeskDepthtInputBox.Text);
             int drawers = int.Parse(NumberOfDrawersInputBox.Text);
             string material = SurfaceMaterialInputBox.Text;
-            int rushOrderOption = int.Parse(RushOrderInputBox.Text);
+            //int rushOrderOption = int.Parse(RushOrderInputBox.Text);
 
             // Scott - I don't think we need to create a Desk object here.  With the way I've currently written the code, I create a desk object on the DisplayQuotes form
             // Desk myDesk = new Desk(width, depth, drawers, material, rushOrderOption);
@@ -275,37 +299,37 @@ namespace MegaDesk_Mosher
 
             return valid;
         }
-        private void validateRushoptionInput(object sender, CancelEventArgs e)
-        {
-            try
-            {
-                int rushOption = int.Parse(RushOrderInputBox.Text);
+        //private void validateRushoptionInput(object sender, CancelEventArgs e)
+        //{
+        //    try
+        //    {
+        //        int rushOption = int.Parse(RushOrderInputBox.Text);
 
 
-                // While the validation fails, change the text color
-                if (rushOption == 3 || rushOption == 5 || rushOption == 7 || rushOption == 14)
-                {
+        //        // While the validation fails, change the text color
+        //        if (rushOption == 3 || rushOption == 5 || rushOption == 7 || rushOption == 14)
+        //        {
 
-                } else
-                {
-                    RushOrderInputBox.ForeColor = Color.Black;
-                    RushOrderInputBox.BackColor = Color.Red;
-                    RushOrderInputBox.Focus();
-                    MessageBox.Show($"Valid days are 3, 5, 7, or 14.  You entered {rushOption}");
-                }
+        //        } else
+        //        {
+        //            RushOrderInputBox.ForeColor = Color.Black;
+        //            RushOrderInputBox.BackColor = Color.Red;
+        //            RushOrderInputBox.Focus();
+        //            MessageBox.Show($"Valid days are 3, 5, 7, or 14.  You entered {rushOption}");
+        //        }
 
 
-                RushOrderInputBox.ForeColor = Color.Black;
-                RushOrderInputBox.BackColor = Color.White;
+        //        RushOrderInputBox.ForeColor = Color.Black;
+        //        RushOrderInputBox.BackColor = Color.White;
 
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Please enter a number for the Number of Drawers");
-                RushOrderInputBox.ForeColor = Color.Red;
-                RushOrderInputBox.Focus();
-            }
+        //    }
+        //    catch (FormatException)
+        //    {
+        //        MessageBox.Show("Please enter a number for the Number of Drawers");
+        //        RushOrderInputBox.ForeColor = Color.Red;
+        //        RushOrderInputBox.Focus();
+        //    }
+        //}
+
         }
-
-    }
 }
