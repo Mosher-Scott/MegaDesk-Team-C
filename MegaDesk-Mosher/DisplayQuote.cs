@@ -27,7 +27,7 @@ namespace MegaDesk_Mosher
         private int quoteRushInfo;
 
 
-        public DisplayQuoteInfo(string name, double width, double depth, int drawers, string material, int rushOrderInfo)
+        public DisplayQuoteInfo(string firstName, string lastName, double width, double depth, int drawers, string material, int rushOrderInfo)
         {
             InitializeComponent();
 
@@ -39,7 +39,7 @@ namespace MegaDesk_Mosher
 
             // Set the values on the form with the desk size/material info
 
-            OrderInfoLabel.Text = $"Quote For {name}";
+            OrderInfoLabel.Text = $"Quote For {firstName} {lastName}";
             widthValue.Text = $"{width.ToString()}\"";
             DepthValue.Text = $"{depth.ToString()}\"";
             DrawersValue.Text = drawers.ToString();
