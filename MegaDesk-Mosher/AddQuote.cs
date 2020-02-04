@@ -10,8 +10,7 @@ using System.Windows.Forms;
 
 namespace MegaDesk_Mosher
 {
-    //Testing Push
-    //Trevor Testing Push
+    // TODO: Add fields to get user first name & user last name
     public partial class AddQuote : Form
     {
 

@@ -12,9 +12,13 @@ namespace MegaDesk_Mosher
 {
     public partial class MainMenu : Form
     {
+
         public MainMenu()
         {
             InitializeComponent();
+
+            // Read the savedquotes file on program load. 
+            DeskQuote.readSavedQuotesFiles();
         }
 
         private void ViewAddQuote_Click(object sender, EventArgs e)
