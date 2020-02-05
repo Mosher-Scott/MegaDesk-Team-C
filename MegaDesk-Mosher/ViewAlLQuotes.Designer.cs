@@ -35,10 +35,10 @@
             // 
             // CloseFormButton
             // 
-            this.CloseFormButton.Location = new System.Drawing.Point(16, 457);
-            this.CloseFormButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.CloseFormButton.Location = new System.Drawing.Point(12, 371);
+            this.CloseFormButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CloseFormButton.Name = "CloseFormButton";
-            this.CloseFormButton.Size = new System.Drawing.Size(148, 43);
+            this.CloseFormButton.Size = new System.Drawing.Size(111, 35);
             this.CloseFormButton.TabIndex = 2;
             this.CloseFormButton.Text = "&Return To Main";
             this.CloseFormButton.UseVisualStyleBackColor = true;
@@ -47,20 +47,21 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(76, 46);
+            this.dataGridView1.Location = new System.Drawing.Point(57, 37);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(680, 290);
             this.dataGridView1.TabIndex = 3;
             // 
             // ViewAllQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1067, 514);
+            this.ClientSize = new System.Drawing.Size(800, 418);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.CloseFormButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ViewAllQuotes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View All Quotes";

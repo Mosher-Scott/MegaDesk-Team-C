@@ -17,7 +17,8 @@ namespace MegaDesk_Mosher
         public string clientLastName { get; set; }
         public string submitDate { get; set; }
         public double quoteTotal { get; set; }
-        public const string SAVEDQUOTEFILE = "savedQuotes.txt";  // Since this won't change
+        // TODO:  Change this from a txt file to json file
+        public const string SAVEDQUOTEFILE = "savedQuotes.json";  // Since this won't change
 
         // Create an empty desk object to be used
         public Desk userDesk;
@@ -102,7 +103,7 @@ namespace MegaDesk_Mosher
         {
             try
             {
-            string[] orderPrices = File.ReadAllLines("..\\MegaDesk-Mosher\\Properties\\rushOrderPrices.txt");
+            string[] orderPrices = File.ReadAllLines("rushOrderPrices.txt");
             int[,] rushOrderGrid = new int[3, 3];
 
                 //outer loop for rows, inner for columns
