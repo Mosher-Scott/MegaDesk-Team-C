@@ -12,6 +12,8 @@ using System.Windows.Forms;
 
 namespace MegaDesk_Mosher
 {
+
+    // TODO:  Possibly add in a 3rd button to this form, for the following: Edit Quote, Save & Back to Main, Save & Enter New Quote
     public partial class DisplayQuoteInfo : Form
     {
         // Create an empty desk object.  Will populate it when the form loads in the DisplayQuoteInfo() section
@@ -27,10 +29,13 @@ namespace MegaDesk_Mosher
         private int quoteRushInfo;
 
 
-        public DisplayQuoteInfo(string firstName, string lastName, double width, double depth, int drawers, string material, int rushOrderInfo)
+        public DisplayQuoteInfo(string firstName, double width, double depth, int drawers, string material, int rushOrderInfo)
         {
             InitializeComponent();
 
+            quoteFirstName = firstName;
+            // TODO: Modify this so it takes user last name input
+            quoteLastName = "Mosher";
             quoteWidth = width;
             quoteDepth = depth;
             quoteDrawers = drawers;
@@ -39,7 +44,7 @@ namespace MegaDesk_Mosher
 
             // Set the values on the form with the desk size/material info
 
-            OrderInfoLabel.Text = $"Quote For {firstName} {lastName}";
+            OrderInfoLabel.Text = $"Quote For {quoteFirstName}";
             widthValue.Text = $"{width.ToString()}\"";
             DepthValue.Text = $"{depth.ToString()}\"";
             DrawersValue.Text = drawers.ToString();
@@ -97,10 +102,13 @@ namespace MegaDesk_Mosher
 
             // Create a quote object
             // TODO: Change my name into the variables.  Hardcoded for testing
-            DeskQuote quoteInfo = new DeskQuote("Scott", "Mosher", currentDate.ToString("MM/dd/yyyy H:mm tt"), userDesk.getTotalCost(), userDesk);
+            DeskQuote quoteInfo = new DeskQuote(quoteFirstName, quoteLastName, currentDate.ToString("MM/dd/yyyy H:mm tt"), userDesk.getTotalCost(), userDesk);
 
-            // Now sent it off to be converted
-            quoteInfo.convertToJson();
+            // Add the quote to a list of quotes
+            DeskQuote.listOfQuotes.Add(quoteInfo);
+
+            // Now write the quote to file
+            quoteInfo.convertListToJson();
 
             MessageBox.Show("Quote Saved");
 

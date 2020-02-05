@@ -12,6 +12,7 @@ namespace MegaDesk_Mosher
 {
     public partial class MainMenu : Form
     {
+
         public MainMenu()
         {
             InitializeComponent();
