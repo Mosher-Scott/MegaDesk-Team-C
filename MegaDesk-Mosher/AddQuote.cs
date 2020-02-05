@@ -10,7 +10,8 @@ using System.Windows.Forms;
 
 namespace MegaDesk_Mosher
 {
-    // TODO: Add fields to get user first name & user last name
+    //Testing Push
+    //Trevor Testing Push
     public partial class AddQuote : Form
     {
 
@@ -150,7 +151,8 @@ namespace MegaDesk_Mosher
             }
 
             //  TODO: Validate all fields before sending the data so someone can't submit empty/invalid data
-            string clientName = CustomerNameInputBox.Text;
+            string clientFirstName = CustomerNameInputBox.Text;
+            string clientLastName = LastNameInputBox.Text;
             double width = double.Parse(DeskWidthInputBox.Text);
             double depth = double.Parse(DeskDepthtInputBox.Text);
             int drawers = int.Parse(NumberOfDrawersInputBox.Text);
@@ -160,7 +162,7 @@ namespace MegaDesk_Mosher
             // Scott - I don't think we need to create a Desk object here.  With the way I've currently written the code, I create a desk object on the DisplayQuotes form
             // Desk myDesk = new Desk(width, depth, drawers, material, rushOrderOption);
 
-            DisplayQuoteInfo viewDisplayQuoteForm = new DisplayQuoteInfo(clientName, width, depth, drawers, material, rushOrderOption);
+            DisplayQuoteInfo viewDisplayQuoteForm = new DisplayQuoteInfo(clientFirstName, clientLastName, width, depth, drawers, material, rushOrderOption);
 
             // Now go back to the View Quote form
             viewDisplayQuoteForm.Tag = this;
@@ -299,6 +301,7 @@ namespace MegaDesk_Mosher
 
             return valid;
         }
+
         //private void validateRushoptionInput(object sender, CancelEventArgs e)
         //{
         //    try
@@ -331,5 +334,5 @@ namespace MegaDesk_Mosher
         //    }
         //}
 
-        }
+    }
 }

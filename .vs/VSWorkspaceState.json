@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MegaDesk-Mosher\\bin (2)"
+    "\\MegaDesk-Mosher",
+    "\\MegaDesk-Mosher\\bin (2)",
+    "\\MegaDesk-Mosher\\Properties"
   ],
-  "SelectedNode": "\\MegaDesk-Mosher",
+  "SelectedNode": "\\MegaDesk-Mosher.sln",
   "PreviewInSolutionExplorer": false
 }
